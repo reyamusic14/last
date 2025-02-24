@@ -8,3 +8,9 @@ __pycache__/
 *$py.class
 .env
 *.env 
+.env
+__pycache__/
+*.pyc
+.DS_Store
+.streamlit/secrets.toml
+venv/ 
