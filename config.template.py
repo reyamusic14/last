@@ -1,4 +1,3 @@
-# API keys configuration
 import os
 
 API_KEYS = {

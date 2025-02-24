@@ -1,0 +1,7 @@
+# Ignore config file with API keys
+config.py
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class 
