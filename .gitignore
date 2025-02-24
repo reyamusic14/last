@@ -1,6 +1,15 @@
+# Environment variables
 .env
+.env.*
+!.env.example
+
+# Python
 __pycache__/
 *.pyc
 .DS_Store
 .streamlit/secrets.toml
-venv/ 
+venv/
+
+# IDE
+.vscode/
+.idea/ 

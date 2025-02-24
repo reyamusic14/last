@@ -1,0 +1,6 @@
+* text=auto
+*.py text eol=crlf
+*.txt text eol=crlf
+*.css text eol=crlf
+*.env* text eol=crlf
+.gitignore text eol=crlf 

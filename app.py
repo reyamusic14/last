@@ -40,11 +40,17 @@ def main():
         if st.button("Generate Insights", type="primary"):
             if location and issue:
                 with st.spinner("Generating images and insights..."):
-                    images = generate_images(location, issue)
-                    climate_info = get_climate_info(issue)
-                    st.session_state.images = images
-                    st.session_state.climate_info = climate_info
-                    st.session_state.show_results = True
+                    try:
+                        images = generate_images(location, issue)
+                        if images:
+                            climate_info = get_climate_info(issue)
+                            st.session_state.images = images
+                            st.session_state.climate_info = climate_info
+                            st.session_state.show_results = True
+                        else:
+                            st.error("Failed to generate images. Please try again.")
+                    except Exception as e:
+                        st.error(f"An error occurred: {str(e)}")
             else:
                 st.error("Please fill in all fields")
 
