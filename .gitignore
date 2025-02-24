@@ -14,3 +14,18 @@ __pycache__/
 .DS_Store
 .streamlit/secrets.toml
 venv/ 
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.DS_Store
+.streamlit/secrets.toml
+venv/
+
+# IDE
+.vscode/
+.idea/ 
